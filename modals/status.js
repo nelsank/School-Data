@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-const studentSchema = new mongoose.Schema({
+const statusSchema = new mongoose.Schema({
     school_id: {type: String},
     gateway: {type: String},
     order_amount: {type: String},
@@ -17,4 +17,4 @@ const studentSchema = new mongoose.Schema({
     isDeleted: {type: Boolean, default: false}
 })
 
-module.exports = mongoose.model('students',studentSchema)
+module.exports = mongoose.model('status',statusSchema)
