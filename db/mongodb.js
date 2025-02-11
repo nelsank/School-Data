@@ -5,5 +5,4 @@ mongoose.connect('mongodb://admin:admin@cluster0-shard-00-00.v7mka.mongodb.net:2
 }).then(()=>console.log('connect success')).catch((err)=>{
     console.log('connection failed')
 })
-require('../modals/status');
-require('../modals/orders');
+require('../modals/contacts');
